@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { db as prisma } from "@/lib/db";
 import InvoiceForm from "../InvoiceForm";
 
 export default async function NewInvoicePage({

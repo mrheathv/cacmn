@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:cf": "npx @opennextjs/cloudflare@latest build",
+    "preview": "npx wrangler pages dev",
+    "deploy": "npx wrangler pages deploy",
     "start": "next start",
     "lint": "eslint",
     "db:seed": "npx ts-node --project tsconfig.json prisma/seed.ts",
@@ -32,6 +35,8 @@
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.16",
+    "@opennextjs/cloudflare": "^1.17.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -39,6 +44,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.69.0"
   }
 }

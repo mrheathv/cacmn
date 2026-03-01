@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { db as prisma } from "@/lib/db";
 import { formatDate } from "@/lib/utils";
 import { notFound } from "next/navigation";
 import Link from "next/link";

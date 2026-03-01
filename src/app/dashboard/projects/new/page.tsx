@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { db as prisma } from "@/lib/db";
 import ProjectForm from "../ProjectForm";
 
 export default async function NewProjectPage() {

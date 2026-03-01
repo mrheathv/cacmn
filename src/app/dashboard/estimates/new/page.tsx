@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { db as prisma } from "@/lib/db";
 import EstimateForm from "../EstimateForm";
 
 export default async function NewEstimatePage({

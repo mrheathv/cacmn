@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { db as prisma } from "@/lib/db";
 import { formatDate, formatCurrency, getStatusColor } from "@/lib/utils";
 import Link from "next/link";
 import { Plus, ClipboardList } from "lucide-react";

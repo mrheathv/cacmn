@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { db as prisma } from "@/lib/db";
 import { formatDate } from "@/lib/utils";
 import Link from "next/link";
 import { Plus, BookOpen, Cloud, Users } from "lucide-react";
