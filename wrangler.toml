@@ -4,4 +4,4 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next/assets"
 
 [vars]
-NEXTAUTH_URL = "https://construction-os.pages.dev"
+NEXTAUTH_URL = "https://cacmn9.pages.dev"
