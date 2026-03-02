@@ -10,7 +10,7 @@ export const USERS = [
     name: "Mike Johnson",
     email: "admin@constructall.com",
     // bcrypt hash of "admin123"
-    password: "$2b$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    password: "$2b$10$vHluzKpUR7GkqJmmd7TQAuRCqAHsZuv./WWvusiz9oToBbuOAPEue",
     role: "ADMIN",
     image: null,
     createdAt: new Date("2024-01-01"),
@@ -20,7 +20,8 @@ export const USERS = [
     id: "user-pm1",
     name: "Sarah Peterson",
     email: "sarah@constructall.com",
-    password: "$2b$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    // bcrypt hash of "pm123"
+    password: "$2b$10$TxKDTxIUQF9GHNXdEUzAI.ZDwhBKwlvgLaT8KNeX/lrWGLR/B9RuS",
     role: "PM",
     image: null,
     createdAt: new Date("2024-01-01"),
@@ -30,7 +31,8 @@ export const USERS = [
     id: "user-pm2",
     name: "Tom Anderson",
     email: "tom@constructall.com",
-    password: "$2b$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    // bcrypt hash of "pm123"
+    password: "$2b$10$TxKDTxIUQF9GHNXdEUzAI.ZDwhBKwlvgLaT8KNeX/lrWGLR/B9RuS",
     role: "PM",
     image: null,
     createdAt: new Date("2024-01-01"),
