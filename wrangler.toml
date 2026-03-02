@@ -5,3 +5,4 @@ pages_build_output_dir = ".open-next/assets"
 
 [vars]
 NEXTAUTH_URL = "https://cacmn9.pages.dev"
+AUTH_SECRET = "construction-os-secret-key-change-in-production"
