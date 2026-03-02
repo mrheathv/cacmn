@@ -1,5 +1,4 @@
 import { db as prisma } from "@/lib/db";
-import { auth } from "@/lib/auth";
 import FieldReportForm from "../FieldReportForm";
 
 export default async function NewFieldReportPage({
@@ -8,7 +7,6 @@ export default async function NewFieldReportPage({
   searchParams: Promise<{ projectId?: string }>;
 }) {
   const params = await searchParams;
-  const session = await auth();
 
   const [projects, users] = await Promise.all([
     prisma.project.findMany({ where: { status: "ACTIVE" }, orderBy: { name: "asc" } }),
@@ -21,7 +19,7 @@ export default async function NewFieldReportPage({
         <h1 className="text-2xl font-bold text-gray-900">New Field Report</h1>
         <p className="text-gray-500 text-sm mt-1">Log today's site activity</p>
       </div>
-      <FieldReportForm projects={projects} users={users} defaultProjectId={params.projectId} currentUserId={(session?.user as { id?: string })?.id} />
+      <FieldReportForm projects={projects} users={users} defaultProjectId={params.projectId} currentUserId="user-admin" />
     </div>
   );
 }
